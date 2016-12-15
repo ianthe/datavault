@@ -28,9 +28,9 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title" id="addGroupOwnerLabel">Add group owner</h4>
             </div>
-            <div class="modal-body">
-                <p>Add a new Owner to the <b class="add-owner-group"></b> group</p>
-                <form id="add-group-owner-form">
+            <form id="add-group-owner-form">
+                <div class="modal-body">
+                    <p>Add a new Owner to the <b class="add-owner-group"></b> group</p>
                     <div class="form-group">
                         <label class="control-label">User:</label>
                         <br>
@@ -41,12 +41,12 @@
                             </#list>
                         </select>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button form="add-group-owner-form" type="submit" class="btn btn-primary btn-ok">Add Owner</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button form="add-group-owner-form" type="submit" class="btn btn-primary btn-ok">Add Owner</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

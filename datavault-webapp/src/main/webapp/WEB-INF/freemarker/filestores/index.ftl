@@ -29,9 +29,9 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title" id="addFileStoreSFTPLabel">Add filestore</h4>
             </div>
-            <div class="modal-body">
-                <p>Overwrite the default values as appropriate</p>
-                <form id="add-filestoreSFTP-form">
+            <form id="add-filestoreSFTP-form">
+                <div class="modal-body">
+                    <p>Overwrite the default values as appropriate</p>
                     <div class="form-filestore">
                         <div class="form-group">
                             <label for="hostname">Hostname</label>
@@ -46,12 +46,12 @@
                             <input type="text" class="form-control" id="path" name="path" value="${sftpRootPath}"/>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button form="add-filestoreSFTP-form" type="submit" class="btn btn-primary">Submit</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button form="add-filestoreSFTP-form" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -63,21 +63,21 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title" id="addFileStoreLocalLabel">Add filestore</h4>
             </div>
-            <div class="modal-body">
-                <p>Currently the default values cannot be overwritten</p>
-                <form id="add-filestoreLocal-form">
+            <form id="add-filestoreLocal-form">
+                <div class="modal-body">
+                    <p>Currently the default values cannot be overwritten</p>
                     <div class="form-filestore">
                         <div class="form-group">
                             <label for="path">Path</label>
                             <input type="text" class="form-control" id="path" name="path" value="${activeDir}" readonly />
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button form="add-filestoreLocal-form" type="submit" class="btn btn-primary">Submit</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button form="add-filestoreLocal-form" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
